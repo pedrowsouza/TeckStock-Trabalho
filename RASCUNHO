@@ -1,0 +1,39 @@
+
+pesquisa de paleta de cores https://www.ranoya.com/books/public/css/corescss.php
+
+pesquisa para aprendizado https://youtu.be/PyrMT0GA3sE?si=Hc3_7cdn2ZorIQUb
+
+fortemente inspirado em https://github.com/daniellichotti/
+
+
+node src/server.js ## Iniciar o servidor do BackEnd ##
+
+npm run dev ## Iniciar o servidor do FrondEnd ##
+
+1. Backend — Pasta src/
+
+src/	Pasta principal do backend.
+src/config/	Destinada às configurações do sistema.
+src/controllers/	Recebe e controla as requisições da API.
+src/controllers/materials-controller.js	Recebe solicitações de cadastro, consulta, edição e exclusão.
+src/database/connection.js	Estabelece a conexão com o MySQL.
+src/models/	Pasta destinada à representação dos dados.
+src/routes/materials-routes.js	Define as rotas GET, POST, PUT, PATCH e DELETE.
+src/services/materials-services.js	Contém as funções e consultas SQL que manipulam os materiais.
+src/app.js	Configura o Fastify, o CORS e registra as rotas.
+src/server.js	Inicia o servidor na porta 3000.
+
+2. Frontend — Pasta frontend/src/
+
+frontend/src/	Pasta principal do frontend.
+frontend/src/assets/	Armazena imagens e outros recursos visuais.
+frontend/src/components/	Guarda os componentes reutilizáveis do React.
+components/CadastroMaterial/index.jsx	Formulário para cadastrar equipamentos.
+components/Dashboard/index.jsx	Exibe o resumo dos materiais cadastrados.
+components/ListaMateriais/index.jsx	Lista os equipamentos e permite editar ou excluir.
+pages/Main/index.jsx	Organiza a página principal e seus componentes.
+services/api.jsx	Faz requisições HTTP para o backend.
+App.jsx	Carrega o componente principal da aplicação.
+App.css	Define o visual dos elementos do sistema.
+index.css	Contém estilos gerais da aplicação.
+main.jsx	Ponto de entrada que inicia o React no navegador.
