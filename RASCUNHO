@@ -37,3 +37,13 @@ App.jsx	Carrega o componente principal da aplicação.
 App.css	Define o visual dos elementos do sistema.
 index.css	Contém estilos gerais da aplicação.
 main.jsx	Ponto de entrada que inicia o React no navegador.
+
+Como testar no segundo PC
+1. Instale o Tailscale.
+2. Entre com a mesma conta Tailscale do Chromebook.
+3. Mantenha o Chromebook ligado, conectado à internet e com o backend, MySQL e Tailscale funcionando.
+4. Abra este endereço no navegador do segundo PC:
+TechSolutions — Acesso remoto
+
+https://penguin.tail4e63a6.ts.net
+ Copiar endereço

@@ -1,7 +1,6 @@
 
-const enderecoAPI = 'http://localhost:3000/materials/'
+const enderecoAPI = '/materials/'
 
-// Buscar todos os materiais
 export async function buscarMateriais() {
   const resposta = await fetch(enderecoAPI)
 
@@ -12,7 +11,6 @@ export async function buscarMateriais() {
   return resposta.json()
 }
 
-// Cadastrar um novo material
 export async function cadastrarMaterial(material) {
   const resposta = await fetch(enderecoAPI, {
     method: 'POST',
@@ -29,7 +27,6 @@ export async function cadastrarMaterial(material) {
   return resposta.json()
 }
 
-// Editar um material existente
 export async function editarMaterial(identificador, dadosAtualizados) {
   const resposta = await fetch(
     `${enderecoAPI}${identificador}`,
@@ -53,7 +50,6 @@ export async function editarMaterial(identificador, dadosAtualizados) {
   return resposta.json()
 }
 
-// Excluir um material
 export async function excluirMaterial(identificador) {
   const resposta = await fetch(
     `${enderecoAPI}${identificador}`,

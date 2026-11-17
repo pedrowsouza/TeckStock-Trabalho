@@ -53,7 +53,7 @@ export async function editarMaterial(identificador, dadosAtualizados) {
   return resposta.json()
 }
 
-// Excluir um material
+
 export async function excluirMaterial(identificador) {
   const resposta = await fetch(
     `${enderecoAPI}${identificador}`,
